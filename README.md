@@ -1,5 +1,7 @@
 # md_exporter_jp — Markdown Exporter (Japanese, PDF-only)
 
+🇬🇧 English | [🇯🇵 日本語](README.ja.md)
+
 A commercial-safe, Japanese-language-aware fork of
 [bowenliang123/markdown-exporter](https://github.com/bowenliang123/markdown-exporter)
 for Dify. This fork ships a single tool — **`md_to_pdf`** — designed to
