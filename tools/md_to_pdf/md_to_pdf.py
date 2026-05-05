@@ -1,3 +1,8 @@
+# Modified by SHERPATH Inc. in 2026 to add the `orientation` parameter and
+# wire it through to the Japanese-enabled PDF service. Original work licensed
+# under the Apache License, Version 2.0 by bowenliang123.
+# See CHANGES.md and NOTICE in the package root for details.
+
 from collections.abc import Generator
 from pathlib import Path
 from tempfile import NamedTemporaryFile
@@ -21,6 +26,10 @@ class MarkdownToPdfTool(Tool):
         """
         # get parameters
         md_text = get_md_text_from_tool_params(tool_parameters, is_strip_wrapper=True)
+        # orientation: "portrait" or "landscape" (default: landscape)
+        orientation = tool_parameters.get("orientation") or "landscape"
+        if orientation not in ("portrait", "landscape"):
+            orientation = "landscape"
 
         try:
             # create a temporary output PDF file
@@ -28,7 +37,7 @@ class MarkdownToPdfTool(Tool):
                 temp_pdf_output_path = Path(temp_pdf_file.name)
 
             # convert markdown to pdf using the shared function
-            convert_md_to_pdf(md_text, temp_pdf_output_path, is_strip_wrapper=True)
+            convert_md_to_pdf(md_text, temp_pdf_output_path, is_strip_wrapper=True, orientation=orientation)
 
             # read the result bytes
             result_file_bytes = temp_pdf_output_path.read_bytes()

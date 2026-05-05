@@ -1,0 +1,40 @@
+Markdown Exporter (Japanese-enabled fork) - md_exporter_jp
+==========================================================
+
+Copyright 2026 SHERPATH Inc.
+
+This product is a derivative work of:
+
+  Markdown Exporter
+  Copyright 2024-2026 bowenliang123 <liang.bowen.123@qq.com>
+  https://github.com/bowenliang123/markdown-exporter
+  Licensed under the Apache License, Version 2.0
+
+  The original project is licensed under the Apache License, Version 2.0
+  (the "License"); you may not use that file except in compliance with the
+  License. You may obtain a copy of the License at:
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+This derivative work (md_exporter_jp) is distributed under the same
+Apache License, Version 2.0.
+
+Modifications made by SHERPATH Inc. are documented in CHANGES.md included
+in this distribution.
+
+----------------------------------------------------------------------
+Bundled Third-Party Assets
+----------------------------------------------------------------------
+
+This distribution bundles the following third-party assets:
+
+  1. Noto Sans JP (Regular)
+     File: md_exporter/assets/fonts/NotoSansJP-Regular.ttf
+     Copyright 2014-2021 Adobe (http://www.adobe.com/),
+     with Reserved Font Name 'Source'.
+     Licensed under the SIL Open Font License, Version 1.1.
+     License text: md_exporter/assets/fonts/OFL.txt
+     Source: https://fonts.google.com/noto/specimen/Noto+Sans+JP
+
+For licensing of all third-party Python dependencies, see
+THIRD_PARTY_LICENSES.md.

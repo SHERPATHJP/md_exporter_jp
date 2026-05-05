@@ -1,17 +1,20 @@
-version: 3.6.9
+# This is a fork of bowenliang123/markdown-exporter (Apache License 2.0).
+# Forked at upstream version 3.6.9 / commit c8033c9 (2026-04-16).
+# Modifications: see CHANGES.md. Attribution: see NOTICE.
+version: 3.6.11
 type: plugin
-author: bowenliang123
-name: md_exporter
+author: sherpath
+name: md_exporter_jp
 tags:
   - utilities
 label:
-  en_US: Markdown Exporter
-  zh_Hans: Markdown 转换器
-  ja_JP: Markdownエクスポーター
+  en_US: Markdown Exporter (Japanese)
+  zh_Hans: Markdown 转换器 (日本語対応)
+  ja_JP: Markdownエクスポーター（日本語対応版）
 description:
-  en_US: Export Markdown to DOCX, PPTX, XLSX, PDF, PNG, HTML, IPYNB, CSV, JSON, JSONL, XML files, and extract code blocks to Python, Bash, JS and etc files.
-  zh_Hans: 导出 Markdown 为 DOCX, PPTX, XLSX, PDF, PNG, HTML, IPYNB, CSV, JSON, JSONL, XML 文件, 并将代码块导出为各类脚本文件(Python, JS, Bash等)。
-  ja_JP: MarkdownをDOCX, PPTX, XLSX, PDF, PNG, HTML, IPYNB, CSV, JSON, JSONL, XML ファイルとしてエクスポートし、さらにコードブロックを各種スクリプトファイルとしてエクスポートします
+  en_US: Markdown Exporter fork with bundled Noto Sans JP font for proper Japanese PDF rendering. Forked from bowenliang123/md_exporter (Apache 2.0).
+  zh_Hans: 包含 Noto Sans JP 字体的 Markdown Exporter 分支，正确渲染中日韩 PDF。基于 bowenliang123/md_exporter (Apache 2.0)。
+  ja_JP: 日本語PDF出力に対応するためNoto Sans JPフォントを同梱したMarkdown Exporterのフォーク。bowenliang123/md_exporter (Apache 2.0) ベース。
 icon: icon.png
 resource:
   memory: 536870912
@@ -30,7 +33,7 @@ meta:
     language: python
     version: "3.12"
     entrypoint: main
-created_at: 2025-01-17T09:12:10.043335+08:00
+created_at: 2026-04-16T20:00:00.000000+09:00
 privacy: PRIVACY.md
 repo: https://github.com/bowenliang123/markdown-exporter
 verified: false

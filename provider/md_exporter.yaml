@@ -1,14 +1,16 @@
+# Modified by SHERPATH Inc. from bowenliang123/markdown-exporter
+# (Apache License 2.0). See CHANGES.md and NOTICE in the package root.
 identity:
-  author: bowenliang123
-  name: md_exporter
+  author: sherpath
+  name: md_exporter_jp
   label:
-    en_US: Markdown Exporter
-    zh_Hans: Markdown 转换器
-    ja_JP: Markdownエクスポーター
+    en_US: Markdown Exporter (Japanese)
+    zh_Hans: Markdown 转换器 (日本語対応)
+    ja_JP: Markdownエクスポーター（日本語対応版）
   description:
-    en_US: Export Markdown to DOCX, PPTX, XLSX, PDF, PNG, HTML, IPYNB, CSV, JSON, JSONL, XML files, and extract code blocks to Python, Bash, JS and etc files.
-    zh_Hans: 导出 Markdown 为 DOCX, PPTX, XLSX, PDF, PNG, HTML, IPYNB, CSV, JSON, JSONL, XML 文件, 并将代码块导出为各类脚本文件(Python, JS, Bash等)。
-    ja_JP: MarkdownをDOCX, PPTX, XLSX, PDF, PNG, HTML, IPYNB, CSV, JSON, JSONL, XML ファイルとしてエクスポートし、さらにコードブロックを各種スクリプトファイルとしてエクスポートします
+    en_US: Markdown Exporter fork with bundled Noto Sans JP font for proper Japanese PDF rendering.
+    zh_Hans: 包含 Noto Sans JP 字体的 Markdown Exporter 分支。
+    ja_JP: 日本語PDF出力に対応するためNoto Sans JPフォントを同梱したMarkdown Exporterのフォーク。
   icon: icon.png
 tools:
   - tools/md_to_docx/md_to_docx.yaml

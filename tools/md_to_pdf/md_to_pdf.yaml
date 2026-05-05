@@ -1,3 +1,7 @@
+# Modified by SHERPATH Inc. in 2026 to add the `orientation` parameter
+# (portrait/landscape). Original work licensed under the Apache License,
+# Version 2.0 by bowenliang123. See CHANGES.md and NOTICE in the package
+# root for details.
 identity:
   name: md_to_pdf
   author: bowenliang123
@@ -30,6 +34,30 @@ parameters:
       en_US: Optional custom output file name, and the filename suffix is not required.
       zh_Hans: 可选的自定义输出文件名，后缀名无需指定
     form: llm
+  - name: orientation
+    type: select
+    required: false
+    default: landscape
+    options:
+      - value: portrait
+        label:
+          en_US: Portrait
+          zh_Hans: 纵向
+          ja_JP: 縦向き
+      - value: landscape
+        label:
+          en_US: Landscape
+          zh_Hans: 横向
+          ja_JP: 横向き
+    label:
+      en_US: Page Orientation
+      zh_Hans: 页面方向
+      ja_JP: ページ向き
+    human_description:
+      en_US: A4 page orientation. Landscape (default) provides wider layout for Japanese text.
+      zh_Hans: A4页面方向。横向(默认)为日文提供更宽的布局。
+      ja_JP: A4ページの向き。横向き（デフォルト）は日本語テキストに対し横長レイアウトを提供します。
+    form: form
 extra:
   python:
     source: tools/md_to_pdf/md_to_pdf.py
