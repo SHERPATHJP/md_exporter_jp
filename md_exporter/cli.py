@@ -4,20 +4,7 @@ import sys
 
 # Mapping of subcommands to their module paths
 SUBCOMMANDS = {
-    "md_to_codeblock": "md_exporter.parser.cli_md_to_codeblock",
-    "md_to_csv": "md_exporter.parser.cli_md_to_csv",
-    "md_to_docx": "md_exporter.parser.cli_md_to_docx",
-    "md_to_html": "md_exporter.parser.cli_md_to_html",
-    "md_to_html_text": "md_exporter.parser.cli_md_to_html_text",
-    "md_to_ipynb": "md_exporter.parser.cli_md_to_ipynb",
-    "md_to_json": "md_exporter.parser.cli_md_to_json",
-    "md_to_latex": "md_exporter.parser.cli_md_to_latex",
-    "md_to_md": "md_exporter.parser.cli_md_to_md",
     "md_to_pdf": "md_exporter.parser.cli_md_to_pdf",
-    "md_to_png": "md_exporter.parser.cli_md_to_png",
-    "md_to_pptx": "md_exporter.parser.cli_md_to_pptx",
-    "md_to_xlsx": "md_exporter.parser.cli_md_to_xlsx",
-    "md_to_xml": "md_exporter.parser.cli_md_to_xml",
 }
 
 

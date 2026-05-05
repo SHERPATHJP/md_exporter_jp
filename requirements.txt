@@ -1,18 +1,8 @@
 # dify plugin python sdk
 dify_plugin~=0.7.1
 
-# markdown
+# markdown -> HTML (Apache 2.0 / BSD-3 stack only; AGPL/GPL deps removed)
 markdown~=3.10.2
 
-# for markdown tables
-pandas[excel,html,xml]~=3.0.1
-
-# for markdown to pdf
+# HTML -> PDF
 xhtml2pdf~=0.2.17
-
-# for markdown to png
-PyMuPDF~=1.26.7
-pillow~=12.1.0
-
-# pandoc
-pypandoc-binary~=1.16.2

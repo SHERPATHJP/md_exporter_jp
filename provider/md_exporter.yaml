@@ -13,20 +13,7 @@ identity:
     ja_JP: 日本語PDF出力に対応するためNoto Sans JPフォントを同梱したMarkdown Exporterのフォーク。
   icon: icon.png
 tools:
-  - tools/md_to_docx/md_to_docx.yaml
   - tools/md_to_pdf/md_to_pdf.yaml
-  - tools/md_to_xlsx/md_to_xlsx.yaml
-  - tools/md_to_pptx/md_to_pptx.yaml
-  - tools/md_to_ipynb/md_to_ipynb.yaml
-  - tools/md_to_html/md_to_html.yaml
-  - tools/md_to_html_text/md_to_html_text.yaml
-  - tools/md_to_md/md_to_md.yaml
-  - tools/md_to_png/md_to_png.yaml
-  - tools/md_to_csv/md_to_csv.yaml
-  - tools/md_to_json/md_to_json.yaml
-  - tools/md_to_xml/md_to_xml.yaml
-  - tools/md_to_latex/md_to_latex.yaml
-  - tools/md_to_codeblock/md_to_codeblock.yaml
 extra:
   python:
     source: provider/md_exporter.py
